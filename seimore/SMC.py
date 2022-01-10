@@ -131,7 +131,7 @@ class Mod_Cnstr():
 			self.Resps(alpha=respi[0], f=respi[1])
 			date = str(datetime.date(datetime.now()))
 			nm = "MPCL"
-			f_name = "/Users/Muhammad/Desktop/Seimore/Resp-Dicts/" + date + '--' + nm + '--' + svdes + ".pickle"
+			f_name = "/" + date + '--' + nm + '--' + svdes + ".pickle"
 			file = open(f_name,"wb")
 			pickle.dump(self.resp, file)
 			file.close()
@@ -154,17 +154,10 @@ class Mod_Cnstr():
 					nb = str(self.n_base)
 					nl = self.survphas
 					nk = "NL%s"%self.nonlin_flg + str(self.k_max)
-					f_name = "/Users/Muhammad/Desktop/Research/Seimore/Modes-Dicts/" + date + '--' + time + '--' + nm + '-' + nb + '-' + nl + '-' + nk + '-' + self.mode_dct[str(self.mode)] + ".pickle"
+					f_name = "/" + date + '--' + time + '--' + nm + '-' + nb + '-' + nl + '-' + nk + '-' + self.mode_dct[str(self.mode)] + ".pickle"
 				else:
 					name = svdes
-					f_name = "/Users/Muhammad/Desktop/Research/Seimore/Modes-Dicts/" + name + ".pickle"
+					f_name = "/" + name + ".pickle"
 				file = open(f_name,"wb")
 				pickle.dump(self.dicts, file)
 				file.close()
-
-
-
-
-
-
-
