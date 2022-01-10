@@ -2,17 +2,8 @@
 ### Script Created on November 27th, 2019
 
 ### Libraries
-import camb
-from camb import model, initialpower
-from scipy.interpolate import interp1d
-from matplotlib import rc
-import re
-import matplotlib.pyplot as plt
 from scipy.integrate import quad as qd
-import numpy as np
-import numpy
 import time as t
-from matplotlib import rc
 from BasicFuncs import *
 
 ### Main Part of Code
