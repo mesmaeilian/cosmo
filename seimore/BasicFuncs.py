@@ -15,6 +15,7 @@ import re
 import matplotlib.pyplot as plt
 from scipy.integrate import quad as qd
 import numpy as np
+import numpy
 import time as t
 import scipy.special as sp
 
